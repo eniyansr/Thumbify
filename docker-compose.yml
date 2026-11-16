@@ -1,0 +1,13 @@
+services:
+  thumbify:
+    build: .
+    container_name: thumbify-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./assets:/app/assets
+      - ./downloads:/app/downloads
+      - ./logs:/app/logs
+      - ./thumbify_bot.session:/app/thumbify_bot.session
+

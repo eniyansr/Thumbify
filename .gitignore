@@ -1,0 +1,38 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Credentials and secrets
+.env
+*.session
+*.session-journal
+
+# Process and runtime artifacts
+*.pid
+*.zip
+
+# Runtime data & temp downloads
+downloads/*
+!downloads/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Loose root temp thumbnails
+/thubmnail1.jpg
+/thumbnail.jpg
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
